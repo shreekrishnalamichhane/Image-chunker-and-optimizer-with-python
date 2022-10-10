@@ -16,7 +16,7 @@ def progress(count, total, prefix=''):
 # Get the list of all files and directories
 path = "./"
 
-files = os.listdir(path+"src/")
+files = sorted(os.listdir(path+"src/"))
 # print(files)
 
 chunkIndex = 0
@@ -25,7 +25,7 @@ totalItems = len(files)
 currentItems = 0
 totalSave = 0
 chunkSize = int(input("Enter the number of files in one chunk : "))
-quality = float(input("Enter the quality [0-100]: "))
+quality = int(input("Enter the quality [0-100]: "))
 ratio = float(input("Enter the ratio [0.0-1.0] : "))
 
 for x in files:
