@@ -1,2 +1,3 @@
 dst/*
 src/*
+__pycache__
