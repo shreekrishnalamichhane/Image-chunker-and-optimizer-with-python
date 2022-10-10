@@ -17,7 +17,7 @@ def progress(count, total, prefix=''):
 path = "./"
 
 files = os.listdir(path+"src/")
-print(files)
+# print(files)
 
 chunkIndex = 0
 chunkCount = 1
